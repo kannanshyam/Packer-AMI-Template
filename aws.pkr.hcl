@@ -30,4 +30,9 @@ build {
   source "source.amazon-ebs.webserver" {
     ssh_username = "ec2-user"
   }
+  
+  provisioner "shell" {
+    script = "webserver.sh"
+
+  }
 }
